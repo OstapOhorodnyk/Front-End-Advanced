@@ -7,12 +7,12 @@ const customerMoney = 500;
 let highestPrice = Math.max(pencil, paints, pen);
 let minPrice = Math.min(pencil, paints, pen);
 let sumAllthings = pencil + paints + pen;
-let intgsum = Math.trunc(pencil) + Math.trunc(paints) + Math.trunc(pen);
+let integSum = Math.trunc(pencil) + Math.trunc(paints) + Math.trunc(pen);
 let roundedsum = 100 * Math.round(sumAllthings / 100);
-let roundingSumResult = intgsum % 2 == 0;
+let roundingSumResult = integSum % 2 == 0;
 let restAfterPayment = customerMoney - sumAllthings;
 let averageAmount = sumAllthings / 3;
-let discounr = Math.floor(Math.random() * 60) + 10;
+let discount = Math.floor(Math.random() * 60) + 10;
 let priceDiscount = (sumAllthings - discounr).toFixed();
 let profit = (sumAllthings / 2 - discounr).toFixed();
 
@@ -22,7 +22,7 @@ console.log(`
 Максимальна ціна: ${highestPrice} грн.
 Мінімальна ціна: ${minPrice} грн.
 Вартість всіх товарів: ${sumAllthings} грн.
-Сума округлених (в меншу сторону) цін: ${intgsum} грн.
+Сума округлених (в меншу сторону) цін: ${integSum} грн.
 Сума товарів округлена до сотень: ${roundedsum}
 Сума всіх товарів (округлена в меншу сторону) є парним числом: ${roundingSumResult}
 Решта від 500грн становить: ${+restAfterPayment.toFixed(2)} грн.
