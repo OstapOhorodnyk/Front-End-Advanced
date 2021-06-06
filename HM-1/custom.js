@@ -13,8 +13,8 @@ let roundingSumResult = integSum % 2 == 0;
 let restAfterPayment = customerMoney - sumAllthings;
 let averageAmount = sumAllthings / 3;
 let discount = Math.floor(Math.random() * 60) + 10;
-let priceDiscount = (sumAllthings - discounr).toFixed();
-let profit = (sumAllthings / 2 - discounr).toFixed();
+let priceDiscount = (sumAllthings - discount).toFixed();
+let profit = (sumAllthings / 2 - discount).toFixed();
 
 //Advanced
 
@@ -27,6 +27,6 @@ console.log(`
 Сума всіх товарів (округлена в меншу сторону) є парним числом: ${roundingSumResult}
 Решта від 500грн становить: ${+restAfterPayment.toFixed(2)} грн.
 Середня ціна: ${+averageAmount.toFixed(2)} грн.
-Сумма знижки: ${discounr} грн.
+Сумма знижки: ${discount} грн.
 Ціна зі знижкою: ${priceDiscount} грн.
 Сума прибутку із урахуванням знижки: ${profit} грн.`);
