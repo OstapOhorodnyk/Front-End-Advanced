@@ -1,5 +1,3 @@
-// BASE
-
 const pencil = 15.678;
 const paints = 123.965;
 const pen = 90.2345;
@@ -15,8 +13,6 @@ let averageAmount = sumAllthings / 3;
 let discount = Math.floor(Math.random() * 60) + 10;
 let priceDiscount = (sumAllthings - discount).toFixed();
 let profit = (sumAllthings / 2 - discount).toFixed();
-
-//Advanced
 
 console.log(`
 Максимальна ціна: ${highestPrice} грн.
