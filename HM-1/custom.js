@@ -7,7 +7,7 @@ let minPrice = Math.min(pencil, paints, pen);
 let sumAllthings = pencil + paints + pen;
 let integSum = Math.trunc(pencil) + Math.trunc(paints) + Math.trunc(pen);
 let roundedSum = 100 * Math.round(sumAllthings / 100);
-let roundingSumResult = integSum % 2 == 0;
+let roundingSumResult = integSum % 2 === 0;
 let restAfterPayment = customerMoney - sumAllthings;
 let averageAmount = sumAllthings / 3;
 let discount = Math.floor(Math.random() * 60) + 10;
