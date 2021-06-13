@@ -1,9 +1,6 @@
-//функція 1
-
 const getMaxDigit = (number) =>
   Math.max(...Array.from(String(number)).map((item) => parseInt(item)));
 
-//функція 2
 const powNumber = (number, power) => {
   let result = number;
 
@@ -13,11 +10,9 @@ const powNumber = (number, power) => {
 
   return result;
 };
-//функція 3
 
 const formatName = (name) =>
   (formatedName = name[0].toUpperCase() + name.substring(1).toLowerCase());
-//функція 4
 
 const countClearProfit = function (salary, ...taxes) {
   let totalTax = taxes.reduce((total, current) => total + current);
@@ -26,13 +21,12 @@ const countClearProfit = function (salary, ...taxes) {
   return clearProfit;
 };
 
-//функція 5
 const getRandomNumber = (firstNumber, lostNumber) => {
   const randomNumber =
     Math.floor(Math.random() * (lostNumber - firstNumber + 1)) + firstNumber;
   return randomNumber;
 };
-//функція 6
+
 const countLetter = (letterSearch, string) => {
   let counter = 0;
   const splitedString = string.split("");
@@ -45,7 +39,7 @@ const countLetter = (letterSearch, string) => {
 
   return counter;
 };
-//функція 7
+
 const convertCurrency = (currency) => {
   const buyDollarCost = 28.5;
   const sellDollarCost = 28.1;
@@ -59,7 +53,7 @@ const convertCurrency = (currency) => {
 
   return result;
 };
-//функція 8
+
 const getRandomPassword = (passwordNumber = 8) => {
   const numbers = "0123456789";
   let password = "";
@@ -70,19 +64,17 @@ const getRandomPassword = (passwordNumber = 8) => {
 
   return password;
 };
-//функція 9
 
 const deleteLetters = (deleteLetter, string) => {
   return string.replaceAll(deleteLetter, "");
 };
-//функція 10
 
 const isPalyndrom = (string) => {
   const modyfiedString = string.split(" ").join("").toLowerCase();
   const reverseString = modyfiedString.split("").reverse().join("");
   return modyfiedString === reverseString;
 };
-//функція 11
+
 const deleteDuplicateLetter = (string) => {
   const modyfiedString = string.toLowerCase().split("");
   let result = "";
